@@ -1,0 +1,269 @@
+/*CSS RESET*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* NAVBAR */
+#after{
+    display:none;
+}
+body{
+    background-color: rgb(38, 179, 197);
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+}
+
+/* NAVBAR:LOGO ,IMAGE */
+#logo{
+    margin:10px 34px;
+}
+
+#logo img{
+    height:56px;
+    margin:0px 0px;
+    border-radius: 100%;
+}
+/* NAVBAR:LIST STYLING */
+#navbar ul{
+    display:flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size:1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    padding: 3px 22px;
+    border-radius:20px;
+    text-decoration:none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+
+/* HOME SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    height:581px;
+    padding:3px 200px;
+    justify-content: center;
+    align-items:center;
+}
+#home::before{
+    content:"";
+    background:url('/html/website/image/bak.jpg') no-repeat center center/cover;
+    position:absolute;
+    top:0px;left:0px;
+    height:642px;
+    width:100%;
+    z-index:-1;
+    opacity:0.90;
+}
+
+#home h1{
+    color:rgb(132, 0, 255);
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#home p{
+    color:rgb(190, 56, 96);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* .move
+{
+    animation-name: cloud;
+    animation:cloud 50s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:0px;
+    }
+    100%{
+        top:1000px;
+    }
+} */
+#one{
+    position: absolute;
+    height: 155px;
+    width: 380px;
+    left:0%;
+    animation-name: cloud;
+    animation:cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#two{
+    position: absolute;
+    height: 176px;
+    width: 395px;
+    left:25%;
+    animation-name: cloud;
+    animation:cloud 15s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#three{
+    position: absolute;
+    height: 140px;
+    width: 360px;
+    left:75%;
+    animation-name: cloud;
+    animation:cloud 20s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#four{
+    position: absolute;
+    height: 155px;
+    width: 380px;
+    animation-name: cloud;
+    left:69%;
+    animation:cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#five{
+    position: absolute;
+    height: 176px;
+    width: 395px;
+    left:46%;
+    animation-name: cloud;
+    animation:cloud 15s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#six{
+    position: absolute;
+    height: 140px;
+    width: 360px;
+    left:15%;
+    animation-name: cloud;
+    animation:cloud 20s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#seven{
+    position: absolute;
+    height: 176px;
+    width: 395px;
+    left:60%;
+    animation-name: cloud;
+    animation:cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#eight{
+    position: absolute;
+    height: 140px;
+    width: 360px;
+    left:35%;
+    animation-name: cloud;
+    animation:cloud 10s linear infinite;
+}
+@keyframes cloud{
+    0%{
+        top:-30%;
+    }
+    100%{
+        top:100%;
+    }
+}
+#rocket{
+    position:absolute;
+    height:422px;
+    width:245px;
+    top:35%;
+    animation-name:rocket;
+    animation:rocket 15s linear infinite;
+}
+@keyframes rocket{
+    0%{
+        left:38%;
+        top:50%;
+    }
+    100%{
+        left:47%;
+        top:35%;
+    }
+}
+@keyframes up{
+    0%{
+        left:38%;
+        top:50%;
+    }
+    100%{
+        left:38%;
+        top:-40%;
+    }
+}
+
